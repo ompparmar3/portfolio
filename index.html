@@ -1,29 +1,34 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om Parmar's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #121212;
+            color: #ffffff;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
         h1 {
             text-align: center;
-            color: #007bff;
+            color: #ff9800;
             margin-bottom: 30px;
+            font-size: 2.5em;
         }
         .profile-img {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-bottom: 40px;
         }
         .profile-img img {
@@ -31,37 +36,66 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ff9800;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
         .social-links {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
         }
         .social-links a {
-            display: inline-block;
-            margin: 0 20px;
-            font-size: 20px;
-            color: #333;
+            margin: 0 10px;
+            font-size: 1.2em;
+            color: #0c0a0a;
             text-decoration: none;
             padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #007bff;
+            border-radius: 8px;
+            background-color: #ff9800;
             transition: background-color 0.3s ease;
         }
         .social-links a:hover {
-            background-color: #0056b3;
-            color: #ffffff;
+            background-color: #e68900;
         }
-
-        /* Responsive CSS */
-        @media only screen and (max-width: 600px) {
-            .container {
-                max-width: 100%;
+        .achievements {
+            margin-top: 40px;
+        }
+        .achievements h2 {
+            text-align: center;
+            color: #ff9800;
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+        .achievement-item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .achievement-item img {
+            width: 150px;
+            height: 100px;
+            border-radius: 12px;
+            margin-right: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .achievement-item div {
+            font-size: 1em;
+            color: #b0b0b0;
+        }
+        @media (max-width: 600px) {
+            .achievement-item {
+                flex-direction: column;
+                text-align: center;
             }
-            .profile-img img {
-                width: 150px;
-                height: 150px;
+            .achievement-item img {
+                margin-bottom: 10px;
+            }
+            .social-links {
+                flex-direction: column;
+            }
+            .social-links a {
+                margin: 10px 0;
             }
         }
     </style>
@@ -72,16 +106,34 @@
     <h1>Om Parmar's Portfolio</h1>
     
     <div class="profile-img">
-        <img src="om/om.jpg" alt="Om Parmar">
+        <img src="C:\Users\darks\OneDrive\Desktop\om\profile-picture.jpg" alt="Om Parmar's Profile Picture">
     </div>
     
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/om-parmar-a204642a2?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/om-parmar-a204642a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
         <a href="https://github.com/ompparmar3" target="_blank">GitHub</a>
         <a href="https://www.instagram.com/om_p_parmar_05?igsh=ZHp0ZXk0enJ1eGx5" target="_blank">Instagram</a>
     </div>
+    
+    <div class="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-item">
+            <img src="C:\Users\darks\OneDrive\Desktop\om\achievement1.jpg" alt="Achievement 1">
+            <div>
+                <h3>leadership at my campus</h3>
+                <p>I am thrilled to announce that I have been selected as the AlgoZenith CCP Lead at my college campus! 🎉<br>
+
+                    This opportunity allows me to enhance my leadership skills, engage with professionals, and embody the values of AlgoZenith in my college community. I am excited to contribute and grow in this role.<br>
+                    
+                    Thank you to AlgoZenith for this incredible opportunity and to everyone who has supported me along the way. Your encouragement and guidance have been invaluable.<br>
+                    
+                    Stay tuned for updates on this exciting journey!<br>
+                    
+                    #Leadership #AlgoZenith #Grateful #NewBeginnings<br></p>
+            </div>
+        </div>
+        </div>
 </div>
 
-
-
-</body></html>
+</body>
+</html>
